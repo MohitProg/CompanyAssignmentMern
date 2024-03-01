@@ -1,0 +1,37 @@
+input[type=radio] {
+    border: 1px;
+    width: 1.2rem   ;
+    
+
+    height: 1.3em;
+    color: purple;
+    background-color: purple;
+    border-color: purple;
+
+}   
+
+.star:after { 
+    content:"*";
+    color: red;
+ 
+
+}
+
+
+
+p{
+    color: rgba(255, 0, 0, 0.644);
+
+    display: none;
+}
+
+/* input filed  error */
+
+
+input:invalid[focused="true"] ~ p{
+    display: block;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
